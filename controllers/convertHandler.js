@@ -2,7 +2,8 @@ function ConvertHandler() {
   this.getNum = function (input) {
     const chrRe = /[a-zA-Z]/;
     const numRe = /^\d+(?:\.\d+)?(?:\/\d+(?:\.\d+)?)?$/;
-    const num = input.split(chrRe)[0];
+    let num = input.split(chrRe)[0];
+    num = num == "" ? "1" : num;
     const isCorrectNumber = numRe.test(num);
     return isCorrectNumber ? parseFloat(num) : "invalid number";
   };
@@ -23,6 +24,7 @@ function ConvertHandler() {
         result = "L";
         break;
       case "l":
+      case "L":
         result = "gal";
         break;
       case "lbs":
@@ -51,6 +53,7 @@ function ConvertHandler() {
         result = "gallons";
         break;
       case "l":
+      case "L":
         result = "liters";
         break;
       case "lbs":
@@ -85,6 +88,7 @@ function ConvertHandler() {
         result = initNum * galToL;
         break;
       case "l":
+      case "L":
         result = initNum * lToGal;
         break;
       case "lbs":

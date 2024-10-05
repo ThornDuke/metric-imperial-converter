@@ -17,30 +17,30 @@ Working on this project will involve you writing your code using one of the foll
 
 ## tasks
 
-- [ ] Complete the necessary conversion logic in /controllers/convertHandler.js
-- [ ] Complete the necessary routes in /routes/api.js
-- [ ] Copy the sample.env file to .env and set the variables appropriately
-- [ ] To run the tests automatically, add NODE_ENV=test in your .env file
-- [ ] To run the tests in the console, use the command npm run test.
+- [x] Complete the necessary conversion logic in /controllers/convertHandler.js
+- [x] Complete the necessary routes in /routes/api.js
+- [x] Copy the sample.env file to .env and set the variables appropriately
+- [x] To run the tests automatically, add NODE_ENV=test in your .env file
+- [x] To run the tests in the console, use the command npm run test.
 - [ ] Write the following tests in tests/1_unit-tests.js:
-  - [ ] _convertHandler_ should correctly read a whole number input.
-  - [ ] _convertHandler_ should correctly read a decimal number input.
-  - [ ] _convertHandler_ should correctly read a fractional input.
-  - [ ] _convertHandler_ should correctly read a fractional input with a decimal.
-  - [ ] _convertHandler_ should correctly return an error on a double-fraction (i.e. 3/2/3).
-  - [ ] _convertHandler_ should correctly default to a numerical input of 1 when no numerical input
+  - [x] _convertHandler_ should correctly read a whole number input.
+  - [x] _convertHandler_ should correctly read a decimal number input.
+  - [x] _convertHandler_ should correctly read a fractional input.
+  - [x] _convertHandler_ should correctly read a fractional input with a decimal.
+  - [x] _convertHandler_ should correctly return an error on a double-fraction (i.e. 3/2/3).
+  - [x] _convertHandler_ should correctly default to a numerical input of 1 when no numerical input
         is provided.
-  - [ ] _convertHandler_ should correctly read each valid input unit.
-  - [ ] _convertHandler_ should correctly return an error for an invalid input unit.
-  - [ ] _convertHandler_ should return the correct return unit for each valid input unit.
-  - [ ] _convertHandler_ should correctly return the spelled-out string unit for each valid input
+  - [x] _convertHandler_ should correctly read each valid input unit.
+  - [x] _convertHandler_ should correctly return an error for an invalid input unit.
+  - [x] _convertHandler_ should return the correct return unit for each valid input unit.
+  - [x] _convertHandler_ should correctly return the spelled-out string unit for each valid input
         unit.
-  - [ ] _convertHandler_ should correctly convert gal to L.
-  - [ ] _convertHandler_ should correctly convert L to gal.
-  - [ ] _convertHandler_ should correctly convert mi to km.
-  - [ ] _convertHandler_ should correctly convert km to mi.
-  - [ ] _convertHandler_ should correctly convert lbs to kg.
-  - [ ] _convertHandler_ should correctly convert kg to lbs.
+  - [x] _convertHandler_ should correctly convert gal to L.
+  - [x] _convertHandler_ should correctly convert L to gal.
+  - [x] _convertHandler_ should correctly convert mi to km.
+  - [x] _convertHandler_ should correctly convert km to mi.
+  - [x] _convertHandler_ should correctly convert lbs to kg.
+  - [x] _convertHandler_ should correctly convert kg to lbs.
 - [ ] Write the following tests in tests/2_functional-tests.js:
   - [ ] Convert a valid input such as `10L`: GET request to `/api/convert`.
   - [ ] Convert an invalid input such as `32g`: GET request to `/api/convert`.
