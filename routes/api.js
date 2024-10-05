@@ -12,7 +12,7 @@ module.exports = function (app) {
 
     const initNum = convertHandler.getNum(input);
     const initUnit = convertHandler.getUnit(input);
-    console.log({ input, initNum, initUnit });
+    // console.log({ input, initNum, initUnit });
     if (
       initNum.toString().toLowerCase().startsWith("invalid") &&
       initUnit.toString().toLowerCase().startsWith("invalid")
