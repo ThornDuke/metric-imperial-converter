@@ -5,6 +5,10 @@ function ConvertHandler() {
     let num = input.split(chrRe)[0];
     num = num == "" ? "1" : num;
     const isCorrectNumber = numRe.test(num);
+    if (isCorrectNumber && num.includes("/")) {
+      const [dividend, divider] = num.split("/");
+      num = dividend / divider;
+    }
     return isCorrectNumber ? parseFloat(num) : "invalid number";
   };
 

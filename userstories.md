@@ -51,8 +51,10 @@ Working on this project will involve you writing your code using one of the foll
 
 ## meta
 
-- Solution Link: <>
-- Source Code Link: <>
+- Challenge link:
+  <https://www.freecodecamp.org/learn/quality-assurance/quality-assurance-projects/metric-imperial-converter>
+- Solution Link: <http://localhost:3000/>
+- Source Code Link: <https://github.com/ThornDuke/metric-imperial-converter>
 
 ## Tests
 
@@ -69,11 +71,11 @@ Working on this project will involve you writing your code using one of the foll
 - [x] If the unit of measurement is invalid, returned will be `'invalid unit'`.
 - [x] If the number is invalid, returned will be `'invalid number'`.
 - [x] If both the unit and number are invalid, returned will be `'invalid number and unit'`.
-- [x] You can use fractions, decimals or both in the parameter (ie. 5, 1/2, 2.5/6), but if nothing
-      is provided it will default to 1.
+- [-] You can use fractions, decimals or both in the parameter (ie. 5, 1/2, 2.5/6), but if nothing
+  is provided it will default to 1.
 - [x] Your return will consist of the `initNum`, `initUnit`, `returnNum`, `returnUnit`, and `string`
       spelling out units in the format
       `'{initNum} {initUnitString} converts to {returnNum} {returnUnitString}'` with the result
       rounded to 5 decimals.
-- [x] All 16 unit tests are complete and passing.
-- [x] All 5 functional tests are complete and passing.
+- [-] All 16 unit tests are complete and passing.
+- [-] All 5 functional tests are complete and passing.
