@@ -41,13 +41,13 @@ Working on this project will involve you writing your code using one of the foll
   - [x] _convertHandler_ should correctly convert km to mi.
   - [x] _convertHandler_ should correctly convert lbs to kg.
   - [x] _convertHandler_ should correctly convert kg to lbs.
-- [ ] Write the following tests in tests/2_functional-tests.js:
-  - [ ] Convert a valid input such as `10L`: GET request to `/api/convert`.
-  - [ ] Convert an invalid input such as `32g`: GET request to `/api/convert`.
-  - [ ] Convert an invalid number such as `3/7.2/4kg`: GET request to `/api/convert`.
-  - [ ] Convert an invalid number AND unit such as `3/7.2/4kilomegagram`: GET request to
+- [x] Write the following tests in tests/2_functional-tests.js:
+  - [x] Convert a valid input such as `10L`: GET request to `/api/convert`.
+  - [x] Convert an invalid input such as `32g`: GET request to `/api/convert`.
+  - [x] Convert an invalid number such as `3/7.2/4kg`: GET request to `/api/convert`.
+  - [x] Convert an invalid number AND unit such as `3/7.2/4kilomegagram`: GET request to
         `/api/convert`.
-  - [ ] Convert with no number such as `kg`: GET request to `/api/convert`.
+  - [x] Convert with no number such as `kg`: GET request to `/api/convert`.
 
 ## meta
 
