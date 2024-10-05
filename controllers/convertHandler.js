@@ -10,7 +10,15 @@ function ConvertHandler() {
 
   this.getUnit = function (input) {
     const measureUnits = ["gal", "L", "kg", "lbs", "km", "mi"];
-    let unit = input.split("").reverse().join("").split(/\d/)[0].split("").reverse().join("");
+    let unit = input
+      .toLowerCase()
+      .split("")
+      .reverse()
+      .join("")
+      .split(/\d/)[0]
+      .split("")
+      .reverse()
+      .join("");
     unit = unit == "l" ? "L" : unit;
     const isCorrectUnit = measureUnits.includes(unit);
     return isCorrectUnit ? unit : "invalid unit";
@@ -48,12 +56,11 @@ function ConvertHandler() {
 
   this.spellOutUnit = function (unit) {
     let result;
-    switch (unit) {
+    switch (unit.toLowerCase()) {
       case "gal":
         result = "gallons";
         break;
       case "l":
-      case "L":
         result = "liters";
         break;
       case "lbs":
@@ -83,12 +90,11 @@ function ConvertHandler() {
     const kgToLbs = 1 / lbsToKg;
     const kmToMi = 1 / miToKm;
     let result;
-    switch (initUnit) {
+    switch (initUnit.toLowerCase()) {
       case "gal":
         result = initNum * galToL;
         break;
       case "l":
-      case "L":
         result = initNum * lToGal;
         break;
       case "lbs":

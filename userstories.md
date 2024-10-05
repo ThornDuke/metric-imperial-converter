@@ -63,7 +63,7 @@ Working on this project will involve you writing your code using one of the foll
 - [x] You can convert `'gal'` to `'L'` and vice versa. (1 gal to 3.78541 L)
 - [x] You can convert `'lbs'` to `'kg'` and vice versa. (1 lbs to 0.453592 kg)
 - [x] You can convert `'mi'` to `'km'` and vice versa. (1 mi to 1.60934 km)
-- [ ] All incoming units should be accepted in both upper and lower case, but should be returned in
+- [x] All incoming units should be accepted in both upper and lower case, but should be returned in
       both the `initUnit` and `returnUnit` in lower case, except for liter, which should be
       represented as an uppercase `'L'`.
 - [x] If the unit of measurement is invalid, returned will be `'invalid unit'`.
@@ -76,4 +76,4 @@ Working on this project will involve you writing your code using one of the foll
       `'{initNum} {initUnitString} converts to {returnNum} {returnUnitString}'` with the result
       rounded to 5 decimals.
 - [x] All 16 unit tests are complete and passing.
-- [ ] All 5 functional tests are complete and passing.
+- [x] All 5 functional tests are complete and passing.
